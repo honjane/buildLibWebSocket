@@ -1,0 +1,9 @@
+简易python服务器测试
+1.修改服务器host和端口号
+
+打开testServer.py文件，找到对应服务器地址和端口号修改
+
+2.启动服务器
+进入py目录下，运行 python testServer.py 命令
+
+3.看到 start success 表明成功了,接下来就可以发送消息了
