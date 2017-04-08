@@ -32,9 +32,13 @@ brew install cmake
 3.3 增加build x86架构文件编译
 
 4.封装websocket.
+
 4.1初始化 initLws
+
 4.2连接  connect
+
 4.3发送／接收消息 writeLws／callback
+
 4.4断开 exitLws
 
 5.搭建简易服务端测试
