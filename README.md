@@ -8,6 +8,7 @@ git clone https://github.com/warmcat/libwebsockets.git
 2.环境准备（Mac版）
 
 2.1安装zlib ：
+
 brew install zlib
 
 2.2安装makedepend：
@@ -15,9 +16,11 @@ brew install zlib
 brew install makedepend
 
 2.3安装cmake ：
+
 brew install cmake
 
 3.编译.a静态文件
+
 有了上面这些工具，准备工作差不多了，然后通过libwebsocket/contrib目录下的android-make-script.sh编译.a文件
 这个sh文件有些问题，比如：只能编译出arm架构的文件，并且在编译zlib库时使用的libtool有问题，libwebsocket原文件编译出错。
 
@@ -45,6 +48,7 @@ brew install cmake
 4.4断开 exitLws
 
 5.搭建简易服务端测试
+
 python testServer.py 
 这个py服务器比较简单，只能支持1024字节传输，超过这个长度会乱码，要测试超长字符，服务器还是要自己去搭建。
 
