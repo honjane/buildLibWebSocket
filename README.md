@@ -44,3 +44,16 @@ brew install cmake
 5.搭建简易服务端测试
 python testServer.py 
 这个py服务器比较简单，只能支持1024字节传输，超过这个长度会乱码，要测试超长字符，服务器还是要自己去搭建。
+
+
+##使用步骤：
+1.进入buildws目录，运行sh文件 生成.a文件，然后把生成的.a文件拷贝到websocket/src/main/jni/ 对应架构下
+libcrypto.a libssl.a libwebsocket.a libz.a
+
+2.使用build-ndk 编译 jni目录生成对应libwebsocket.so 
+怎么编译就不多说，生成的so文件会在libs和obj目录下，把这些生存的so拷贝到jniLibs／对应架构下目录
+
+3.启动python服务器 ，连接服务器，发送消息
+
+
+
