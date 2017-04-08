@@ -47,6 +47,7 @@ python testServer.py
 
 
 ##使用步骤：
+
 1.进入buildws目录，运行sh文件 生成.a文件，然后把生成的.a文件拷贝到websocket/src/main/jni/ 对应架构下
 libcrypto.a libssl.a libwebsocket.a libz.a
 
